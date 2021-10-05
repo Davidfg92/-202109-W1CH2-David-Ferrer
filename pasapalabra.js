@@ -644,7 +644,7 @@ function pasapalabra() {
     }
   }
   function roundQuestions(rosco) {
-    for (i = 0; i < rosco.length; i++) {
+    for (let i = 0; i < rosco.length; i++) {
       checkQuestion(rosco[i]);
     }
     if (sucess === rosco.length) {
