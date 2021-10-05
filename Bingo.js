@@ -34,10 +34,9 @@ function bingo() {
             alert(`ES LÍNEA!`);
           }
         }
-      }
-      else {
-        alert("Hasta pronto")
-        return
+      } else {
+        alert("Hasta pronto");
+        return;
       }
     }
     ganadorBingo(jugadorActual);
@@ -107,8 +106,8 @@ function bingo() {
   }
 
   function comprobrarNumero(carton, numero) {
-    for (i = 0; i < carton.length; i++) {
-      for (k = 0; k < carton[i].length; k++) {
+    for (let i = 0; i < carton.length; i++) {
+      for (let k = 0; k < carton[i].length; k++) {
         if (carton[i][k] === numero) {
           carton[i][k] = "X";
         }
@@ -142,10 +141,10 @@ function bingo() {
     return true;
   }
 
-  function ganadorBingo(jugador){
-    ranking.push(jugador)
+  function ganadorBingo(jugador) {
+    ranking.push(jugador);
     alert(`BINGO!! FELICIDADES!!`);
-    alert(`Te mostramos como queda el ranking.`)
+    alert(`Te mostramos como queda el ranking.`);
     ordenarMostrarRanking();
   }
 }
